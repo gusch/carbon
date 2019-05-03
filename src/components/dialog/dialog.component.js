@@ -136,6 +136,8 @@ class Dialog extends Modal {
           titleId='carbon-dialog-title'
           subheader={ this.props.subtitle }
           subtitleId='carbon-dialog-subtitle'
+          help={ this.props.help }
+          helpLink={ this.props.helpLink }
         />
       );
     }
@@ -250,6 +252,10 @@ Dialog.propTypes = {
   ]),
   /** Subtitle displayed at top of dialog */
   subtitle: PropTypes.string,
+  /** Sets the help text at top of dialog */
+  help: PropTypes.string,
+  /** Sets the help url at top of dialog */
+  helpLink: PropTypes.string,
   /** Size of dialog, default size is 750px */
   size: PropTypes.string,
   /** Determines if the close icon is shown */
